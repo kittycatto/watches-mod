@@ -27,6 +27,7 @@ public class WatchMod
 
     public WatchMod()
     {	
+    	LOGGER.info("constructor");
     	IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
     	ITEMS.register(bus);
     	MinecraftForge.EVENT_BUS.register(new PlayerEventHandler());
